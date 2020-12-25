@@ -9,10 +9,8 @@ blueprint:
       name: Wireless switch with 4 buttons
       description: Tuya Wireless switch with 4 buttons
       selector:
-        device:
-          integration: zibgee2mqtt
-          manufacturer: TuYa
-          model: TS0044
+        entity:
+          domain: sensor
     button_one_single_press:
       name: 1 button - Single press
       description: Action to run on a single press of the button 1
