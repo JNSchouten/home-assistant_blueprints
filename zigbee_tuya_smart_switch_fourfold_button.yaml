@@ -1,16 +1,16 @@
 blueprint:
-  name: Zigbee Tuya TS0044 Smart Switch (4 buttons)
+  name: Zigbee2MQTT - Tuya TS0044 Smart Switch (4 buttons)
   description: >
     Tuya TS0044 Smart Switch (4 buttons), like https://www.zigbee2mqtt.io/devices/TS0044.html
   domain: automation
   source_url: https://github.com/jnschouten/home-assistant_blueprints/blob/main/zigbee_tuya_smart_switch_fourfold_button.yaml
   input:
-    remote:
-      name: EndDevice
+    button_sensor:
+      name: Wireless switch with 4 buttons
       description: Tuya Wireless switch with 4 buttons
       selector:
         device:
-          integration: mqtt
+          integration: zibgee2mqtt
           manufacturer: TuYa
           model: TS0044
     button_one_single_press:
