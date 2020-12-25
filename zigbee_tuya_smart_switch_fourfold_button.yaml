@@ -1,0 +1,39 @@
+blueprint:
+  name: Zigbee Tuya TS0044 Smart Switch (4 buttons)
+  description: >
+    Tuya TS0044 Smart Switch (4 buttons), like https://www.zigbee2mqtt.io/devices/TS0044.html
+  domain: automation
+  source_url: https://github.com/jnschouten/home-assistant_blueprints/blob/main/zigbee_tuya_smart_switch_fourfold_button.yaml
+  input:
+    remote:
+      name: Remote
+      description: Tuya remote
+      selector:
+        device:
+          integration: zigbee2mqtt
+          manufacturer: TuYa
+          model: TS0044
+    button_one_single_press:
+      name: 1 button - Single press
+      description: Action to run on a single press of the button 1
+      default: []
+      selector:
+        action: {}
+    button_one_hold_in:
+      name: 1 button - Hold in
+      description: Action to run when button 1 held in
+      default: []
+      selector:
+        action: {}
+    button_one_hold_release:
+      name: 1 button - Hold release
+      description:  Action to run when button 1 was held in and released
+      default: []
+      selector:
+        action: {}
+    button_two_single_press:
+      name: 2 button - Single press
+      description: Action to run on a single press of the button 2
+      default: []
+      selector:
+        action: {}
