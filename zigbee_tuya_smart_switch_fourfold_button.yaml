@@ -6,8 +6,8 @@ blueprint:
   source_url: https://github.com/jnschouten/home-assistant_blueprints/blob/main/zigbee_tuya_smart_switch_fourfold_button.yaml
   input:
     remote:
-      name: Remote
-      description: Tuya remote
+      name: EndDevice
+      description: Tuya Wireless switch with 4 buttons
       selector:
         device:
           integration: zigbee2mqtt
