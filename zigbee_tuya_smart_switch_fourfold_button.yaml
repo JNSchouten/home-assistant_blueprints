@@ -8,6 +8,8 @@ blueprint:
     button_sensor:
       name: Wireless switch with 4 buttons
       description: Tuya Wireless switch with 4 buttons
+      selector:
+        device:
     button_one_single_press:
       name: 1 button - Single press
       description: Action to run on a single press of the button 1
