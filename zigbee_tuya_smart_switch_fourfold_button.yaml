@@ -10,7 +10,7 @@ blueprint:
       description: Tuya Wireless switch with 4 buttons
       selector:
         device:
-          integration: zigbee2mqtt
+          integration: mqtt
           manufacturer: TuYa
           model: TS0044
     button_one_single_press:
